@@ -66,37 +66,4 @@ class PSO():
             
             self.w = self.up_w - ((self.up_w - self.lb_w) * (it / self.n_iter))
             self.gbest_track_iter.append(self.gbest_cost)
-
-
-if __name__ == '__main__':
-    # n_sim = 30
-    # results = pd.DataFrame()
-    # for s in range(n_sim):
-    #     pso = PSO(minf=-100, maxf=100, n_dim=30, swarm_size=30,
-    #               n_iter=50000, min_init=50, max_init=100, up_w=0.9, lb_w=0.4)
-    #     pso.fit()
-    #     results[f'sim_{s}'] = pso.gbest_track_iter
-    #     best = min(pso.gbest_track_iter)
-
-    # results.to_csv(f'pso_sphere_global_{n_sim}_decain_w.csv', index=False)
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-    # plt.plot(pso.gbest_track_iter, label=best)
-    # plt.legend()
-    # plt.show()
-
-    # results = pd.read_csv('pso_sphere_global.csv')
-
-    # f, ax = plt.subplots(2,1)
-    
-    # results.plot(legend=False, ax=ax[0])
-    # ax[0].set_xlabel('Number of iterations')
-    # ax[0].set_ylabel('Fitness')
-
-    # results.tail(1).transpose().boxplot(ax=ax[1])
-    # ax[1].set_xlabel('PSO Global')
-    # ax[1].set_ylabel('Fitness')
-
-    # plt.subplots_adjust(hspace = 0.7)
-    # plt.show()
-    pass
     
